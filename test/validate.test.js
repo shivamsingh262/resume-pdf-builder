@@ -181,6 +181,30 @@ test('unsafe or invalid github URLs are rejected', () => {
   assert.match(messageFor(validateResume(minimalResume({ github: 5 })), 'github'), /URL string or an object/);
 });
 
+test('website accepts any https URL and derives a label from host and path', () => {
+  const root = validateResume(minimalResume({ website: 'https://www.alex-morgan.example.com/' }));
+  assert.deepEqual(root.resume.website, { url: 'https://www.alex-morgan.example.com/', label: 'alex-morgan.example.com' });
+  const page = validateResume(minimalResume({ website: 'https://example.github.io/portfolio/' }));
+  assert.equal(page.resume.website.label, 'example.github.io/portfolio');
+  const custom = validateResume(minimalResume({ website: { url: 'https://example.com', label: 'My portfolio' } }));
+  assert.deepEqual(custom.resume.website, { url: 'https://example.com/', label: 'My portfolio' });
+});
+
+test('unsafe or invalid website URLs are rejected', () => {
+  const cases = {
+    'javascript:alert(1)': /https:\/\//,
+    'http://example.com': /must use https:\/\//,
+    'data:text/html,<script>alert(1)</script>': /must use https:\/\//,
+    'https://user:pass@example.com': /username or password/,
+    'example.com': /valid absolute URL/,
+  };
+  for (const [url, expected] of Object.entries(cases)) {
+    assert.match(messageFor(validateResume(minimalResume({ website: url })), 'website'), expected, url);
+  }
+  assert.ok(paths(validateResume(minimalResume({ website: { url: 'https://example.com', href: 'x' } }))).includes('website.href'));
+  assert.match(messageFor(validateResume(minimalResume({ website: ['https://example.com'] })), 'website'), /URL string or an object/);
+});
+
 test('theme block shape is checked', () => {
   const result = validateResume(minimalResume({ theme: { name: 7, colour: '#000' } }));
   assert.equal(messageFor(result, 'theme.name'), 'must be a string (got number)');

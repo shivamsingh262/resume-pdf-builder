@@ -37,7 +37,7 @@ test('the example builds a one-page US Letter PDF containing all its text', asyn
   assert.deepEqual([Math.round(pages[0].width), Math.round(pages[0].height)], [612, 792]);
   assert.deepEqual(result.warnings, []);
   const data = readExample();
-  const expected = [data.name, data.title, data.email, data.phone, data.summary, 'linkedin.com/in/alex-morgan-example', 'github.com/alex-morgan-example'];
+  const expected = [data.name, data.title, data.email, data.phone, data.summary, 'linkedin.com/in/alex-morgan-example', 'github.com/alex-morgan-example', 'alex-morgan.example.com'];
   for (const job of data.experience) expected.push(job.title, job.company, job.dates, ...job.bullets);
   for (const group of data.skills) expected.push(group.category, ...group.items);
   for (const ed of data.education) expected.push(ed.degree, ed.school);
@@ -123,8 +123,9 @@ test('the default theme matches the original design pixel for pixel', async (t) 
   const browser = await getBrowser();
   const data = { ...readExample(), photo: null };
   delete data.theme;
-  // The original design predates the GitHub link.
+  // The original design predates the GitHub and website links.
   delete data.github;
+  delete data.website;
   const { resume } = validateResume(data);
   const current = renderHtml(resume, { ...resolveRenderOptions(), singlePage: true });
   const original = legacyHtml({ ...data, linkedin: resume.linkedin });

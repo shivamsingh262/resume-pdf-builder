@@ -9,7 +9,7 @@ const SHORT = 200; // single-line fields: name, title, dates, ...
 const LONG = 5000; // free text: summary, bullets
 
 const TOP_LEVEL_KEYS = [
-  'name', 'title', 'location', 'email', 'phone', 'linkedin', 'github', 'photo',
+  'name', 'title', 'location', 'email', 'phone', 'linkedin', 'github', 'website', 'photo',
   'summary', 'skills', 'experience', 'education', 'theme',
 ];
 
@@ -117,7 +117,8 @@ function join(path, key) {
 }
 
 // Accepts "https://..." or { "url": "https://...", "label": "..." } for a
-// profile link that must point at `domain` or one of its subdomains.
+// link that must point at `domain` or one of its subdomains. Without a
+// `domain`, any https:// host is allowed.
 function checkProfileLink(c, obj, key, domain) {
   const value = obj[key];
   if (value === undefined || value === null) return undefined;
@@ -141,7 +142,7 @@ function checkProfileLink(c, obj, key, domain) {
     return undefined;
   }
   const host = parsed.url.hostname;
-  if (host !== domain && !host.endsWith(`.${domain}`)) {
+  if (domain && host !== domain && !host.endsWith(`.${domain}`)) {
     c.error(p, `must be a ${domain} URL`);
     return undefined;
   }
@@ -235,6 +236,7 @@ function validateResume(input) {
     phone: c.string(input, 'phone', '', { max: 40 }),
     linkedin: checkProfileLink(c, input, 'linkedin', 'linkedin.com'),
     github: checkProfileLink(c, input, 'github', 'github.com'),
+    website: checkProfileLink(c, input, 'website'),
     photo: c.string(input, 'photo', '', { max: 500 }),
     summary: c.string(input, 'summary', '', { max: LONG, multiline: true }),
     skills: checkSkills(c, input),

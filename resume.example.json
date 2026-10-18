@@ -6,6 +6,7 @@
   "email": "alex.morgan@example.com",
   "linkedin": "https://www.linkedin.com/in/alex-morgan-example",
   "github": "https://github.com/alex-morgan-example",
+  "website": "https://alex-morgan.example.com",
   "photo": "assets/placeholder-avatar.svg",
   "summary": "Fictional sample profile. Software engineer with nine years of experience building backend platforms, public APIs, data pipelines and internal developer tools. Enjoys turning slow, fragile systems into simple, observable services, and helping teams ship with confidence through good tooling, clear documentation and pragmatic code review.",
   "skills": [

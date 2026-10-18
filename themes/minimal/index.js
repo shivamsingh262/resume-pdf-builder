@@ -55,6 +55,7 @@ function contactLine(r) {
   if (r.phone) parts.push(esc(r.phone));
   if (r.linkedin) parts.push(`<a href="${esc(r.linkedin.url)}">${esc(r.linkedin.label)}</a>`);
   if (r.github) parts.push(`<a href="${esc(r.github.url)}">${esc(r.github.label)}</a>`);
+  if (r.website) parts.push(`<a href="${esc(r.website.url)}">${esc(r.website.label)}</a>`);
   return parts.length ? `<div class="contact">${parts.map((x) => `<span>${x}</span>`).join('')}</div>` : '';
 }
 

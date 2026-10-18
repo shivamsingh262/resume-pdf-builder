@@ -61,8 +61,8 @@ Then add it to `themes/index.js`.
 `render()` receives:
 
 - `resume`: validated, normalized data. Optional sections are always arrays;
-  optional strings are `undefined` when absent; `linkedin` and `github` are
-  `{ url, label }`.
+  optional strings are `undefined` when absent; `linkedin`, `github` and
+  `website` are `{ url, label }`.
 - `accent`: a validated `#rrggbb` color that has at least 4.5:1 contrast
   against white.
 - `page`: an entry from `src/page.js` (`width`, `height`, `widthPx`,

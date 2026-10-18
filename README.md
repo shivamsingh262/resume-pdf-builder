@@ -101,6 +101,7 @@ fields are rejected, which catches typos such as `"sumary"`.
   "phone": "+1 202-555-0147",
   "linkedin": "https://www.linkedin.com/in/alex-morgan-example",
   "github": "https://github.com/alex-morgan-example",
+  "website": "https://alex-morgan.example.com",
   "photo": "assets/placeholder-avatar.svg",
   "summary": "One or more paragraphs. Use \n\n for a blank line.",
   "skills": [{ "category": "Languages", "items": ["Go, Python", "SQL"] }],
@@ -126,6 +127,7 @@ fields are rejected, which catches typos such as `"sumary"`.
 | `phone` | string | no | Digits, spaces and `+ - ( ) . /`, optional `ext. 12` |
 | `linkedin` | string or object | no | `https://` URL on `linkedin.com`, or `{ "url": "...", "label": "..." }`. The default label is the URL without `https://www.` |
 | `github` | string or object | no | Same format as `linkedin`, but the URL must be on `github.com` |
+| `website` | string or object | no | Same format as `linkedin`, for any `https://` site, e.g. a portfolio. The default label is the host and path, e.g. `example.com` |
 | `photo` | string or `null` | no | Path relative to the config file (see below) |
 | `summary` | string | no | Line breaks allowed, max 5000 characters |
 | `skills` | array | no | `{ "category": string, "items": [string, ...] }`; `items` needs at least one entry |
@@ -245,7 +247,7 @@ and compare the default theme pixel by pixel against the original template in
 - Only two themes, and only the accent color is configurable; fonts and sizes
   change by editing a theme.
 - No custom sections (projects, publications, ...) and no extra links beyond
-  LinkedIn and GitHub. The schema is intentionally small.
+  LinkedIn, GitHub and one website. The schema is intentionally small.
 - Page breaks come from CSS fragmentation in Chromium. A job with more than 6
   bullets (or more than about 1200 characters of bullets) may be split between
   bullets, and the sidebar theme's columns paginate independently.

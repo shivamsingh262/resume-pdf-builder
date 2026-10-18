@@ -32,6 +32,7 @@ test('user text is escaped everywhere it appears, so markup cannot be injected',
     education: [{ degree: payload, school: payload, dates: payload }],
     linkedin: { url: 'https://www.linkedin.com/in/x?a=1&b="2"', label: payload },
     github: { url: 'https://github.com/x?a=1&b="2"', label: payload },
+    website: { url: 'https://example.com/x?a=1&b="2"', label: payload },
   };
   for (const name of Object.keys(THEMES)) {
     const html = render(data, { name });
@@ -42,6 +43,7 @@ test('user text is escaped everywhere it appears, so markup cannot be injected',
     // The query string's quote is percent-encoded by URL parsing and the & is escaped.
     assert.ok(html.includes('href="https://www.linkedin.com/in/x?a=1&amp;b=%222%22"'), name);
     assert.ok(html.includes('href="https://github.com/x?a=1&amp;b=%222%22"'), name);
+    assert.ok(html.includes('href="https://example.com/x?a=1&amp;b=%222%22"'), name);
   }
 });
 
