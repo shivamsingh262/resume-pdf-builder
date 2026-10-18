@@ -10,7 +10,8 @@ permissions:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    # Pinned because the sandbox step below is specific to Ubuntu 24.04.
+    runs-on: ubuntu-24.04
     strategy:
       fail-fast: false
       matrix:
@@ -29,7 +30,7 @@ jobs:
       - run: npm test
       - name: Build the example
         run: npm run build:example -- --out-dir output
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: matrix.node == 22
         with:
           name: example-resume
