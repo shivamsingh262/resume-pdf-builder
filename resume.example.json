@@ -1,0 +1,77 @@
+{
+  "name": "Alex Morgan",
+  "title": "Senior Software Engineer",
+  "location": "Example City, Example Country",
+  "phone": "+1 202-555-0147",
+  "email": "alex.morgan@example.com",
+  "linkedin": "https://www.linkedin.com/in/alex-morgan-example",
+  "github": "https://github.com/alex-morgan-example",
+  "photo": "assets/placeholder-avatar.svg",
+  "summary": "Fictional sample profile. Software engineer with nine years of experience building backend platforms, public APIs, data pipelines and internal developer tools. Enjoys turning slow, fragile systems into simple, observable services, and helping teams ship with confidence through good tooling, clear documentation and pragmatic code review.",
+  "skills": [
+    {
+      "category": "Languages",
+      "items": ["Go, Python, TypeScript", "SQL, Bash"]
+    },
+    {
+      "category": "Backend & APIs",
+      "items": ["gRPC, REST, GraphQL", "PostgreSQL, Redis, Kafka", "Event-driven and service-oriented design"]
+    },
+    {
+      "category": "Data",
+      "items": ["Batch and streaming pipelines", "Apache Airflow, dbt, Parquet"]
+    },
+    {
+      "category": "Infrastructure",
+      "items": ["Kubernetes, Docker, Terraform", "AWS, observability with OpenTelemetry"]
+    },
+    {
+      "category": "Practices",
+      "items": ["Code review and mentoring", "Incident response, on-call, postmortems", "Technical writing and design docs"]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Senior Software Engineer",
+      "company": "Example Systems (fictional)",
+      "dates": "2022 – Present",
+      "bullets": [
+        "Led the redesign of a public billing API used by internal and partner teams, introducing versioning and contract tests.",
+        "Replaced a nightly batch job with a streaming pipeline, cutting report latency from hours to minutes.",
+        "Built a self-service CLI that lets engineers create new services from a template with CI, dashboards and alerts preconfigured.",
+        "Mentored four engineers and ran the team's design-review process."
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Northstar Software (fictional)",
+      "dates": "2019 – 2022",
+      "bullets": [
+        "Developed backend services for a fictional logistics product, handling order routing and shipment tracking.",
+        "Introduced structured logging and tracing across twelve services, shortening incident investigations.",
+        "Migrated the main database to a managed PostgreSQL cluster with zero planned downtime."
+      ]
+    },
+    {
+      "title": "Junior Developer",
+      "company": "Bluefield Labs (fictional)",
+      "dates": "2016 – 2019",
+      "bullets": [
+        "Maintained internal web tools and wrote integration tests for a legacy reporting service.",
+        "Automated release packaging, reducing manual deployment steps from ten to one."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. Computer Science",
+      "school": "Example State University (fictional)",
+      "dates": "2012 – 2016"
+    }
+  ],
+  "theme": {
+    "name": "sidebar",
+    "accentColor": "#1A2B4C",
+    "pageSize": "letter"
+  }
+}

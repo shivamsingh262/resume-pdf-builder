@@ -1,0 +1,207 @@
+{
+  "name": "Alex Morgan",
+  "title": "Senior Software Engineer",
+  "location": "Example City, Example Country",
+  "phone": "+1 202-555-0147",
+  "email": "alex.morgan@example.com",
+  "linkedin": "https://www.linkedin.com/in/alex-morgan-example",
+  "photo": null,
+  "summary": "Fictional sample profile. Software engineer with nine years of experience building backend platforms, public APIs, data pipelines and internal developer tools. Enjoys turning slow, fragile systems into simple, observable services, and helping teams ship with confidence through good tooling, clear documentation and pragmatic code review.\n\nSecond paragraph of the fictional summary to exercise multi-line text.",
+  "skills": [
+    {
+      "category": "Languages",
+      "items": [
+        "Go, Python, TypeScript",
+        "SQL, Bash"
+      ]
+    },
+    {
+      "category": "Backend & APIs",
+      "items": [
+        "gRPC, REST, GraphQL",
+        "PostgreSQL, Redis, Kafka",
+        "Event-driven and service-oriented design"
+      ]
+    },
+    {
+      "category": "Data",
+      "items": [
+        "Batch and streaming pipelines",
+        "Apache Airflow, dbt, Parquet"
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        "Kubernetes, Docker, Terraform",
+        "AWS, observability with OpenTelemetry"
+      ]
+    },
+    {
+      "category": "Practices",
+      "items": [
+        "Code review and mentoring",
+        "Incident response, on-call, postmortems",
+        "Technical writing and design docs"
+      ]
+    },
+    {
+      "category": "Languages II",
+      "items": [
+        "Go, Python, TypeScript",
+        "SQL, Bash"
+      ]
+    },
+    {
+      "category": "Backend & APIs II",
+      "items": [
+        "gRPC, REST, GraphQL",
+        "PostgreSQL, Redis, Kafka",
+        "Event-driven and service-oriented design"
+      ]
+    },
+    {
+      "category": "Data II",
+      "items": [
+        "Batch and streaming pipelines",
+        "Apache Airflow, dbt, Parquet"
+      ]
+    },
+    {
+      "category": "Infrastructure II",
+      "items": [
+        "Kubernetes, Docker, Terraform",
+        "AWS, observability with OpenTelemetry"
+      ]
+    },
+    {
+      "category": "Practices II",
+      "items": [
+        "Code review and mentoring",
+        "Incident response, on-call, postmortems",
+        "Technical writing and design docs"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Fictional Role 1",
+      "company": "Example Company 1 (fictional)",
+      "dates": "2024 – 2025",
+      "bullets": [
+        "Job 1 bullet 1. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 1 bullet 2. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 1 bullet 3. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 1 bullet 4. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 1 bullet 5. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content."
+      ]
+    },
+    {
+      "title": "Fictional Role 2",
+      "company": "Example Company 2 (fictional)",
+      "dates": "2022 – 2023",
+      "bullets": [
+        "Job 2 bullet 1. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 2 bullet 2. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 2 bullet 3. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 2 bullet 4. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 2 bullet 5. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content."
+      ]
+    },
+    {
+      "title": "Fictional Role 3",
+      "company": "Example Company 3 (fictional)",
+      "dates": "2020 – 2021",
+      "bullets": [
+        "Job 3 bullet 1. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 3 bullet 2. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 3 bullet 3. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 3 bullet 4. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 3 bullet 5. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 3 bullet 6. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 3 bullet 7. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 3 bullet 8. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 3 bullet 9. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 3 bullet 10. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 3 bullet 11. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 3 bullet 12. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 3 bullet 13. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 3 bullet 14. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 3 bullet 15. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 3 bullet 16. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content."
+      ]
+    },
+    {
+      "title": "Fictional Role 4",
+      "company": "Example Company 4 (fictional)",
+      "dates": "2018 – 2019",
+      "bullets": [
+        "Job 4 bullet 1. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 4 bullet 2. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 4 bullet 3. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 4 bullet 4. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 4 bullet 5. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content."
+      ]
+    },
+    {
+      "title": "Fictional Role 5",
+      "company": "Example Company 5 (fictional)",
+      "dates": "2016 – 2017",
+      "bullets": [
+        "Job 5 bullet 1. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 5 bullet 2. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 5 bullet 3. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 5 bullet 4. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 5 bullet 5. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content."
+      ]
+    },
+    {
+      "title": "Fictional Role 6",
+      "company": "Example Company 6 (fictional)",
+      "dates": "2014 – 2015",
+      "bullets": [
+        "Job 6 bullet 1. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 6 bullet 2. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 6 bullet 3. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 6 bullet 4. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 6 bullet 5. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content."
+      ]
+    },
+    {
+      "title": "Fictional Role 7",
+      "company": "Example Company 7 (fictional)",
+      "dates": "2012 – 2013",
+      "bullets": [
+        "Job 7 bullet 1. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 7 bullet 2. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 7 bullet 3. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 7 bullet 4. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 7 bullet 5. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content."
+      ]
+    },
+    {
+      "title": "Fictional Role 8",
+      "company": "Example Company 8 (fictional)",
+      "dates": "2010 – 2011",
+      "bullets": [
+        "Job 8 bullet 1. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 8 bullet 2. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 8 bullet 3. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 8 bullet 4. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content.",
+        "Job 8 bullet 5. This is a deliberately long fictional bullet point that describes a made-up achievement in considerable detail so that it wraps across several lines of the column and tests how the layout handles verbose content."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. Computer Science",
+      "school": "Example State University (fictional)",
+      "dates": "2012 – 2016"
+    },
+    {
+      "degree": "M.Sc. Data Engineering",
+      "school": "Northstar Institute (fictional)",
+      "dates": "2017 – 2018"
+    }
+  ]
+}

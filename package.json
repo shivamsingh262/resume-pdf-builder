@@ -1,0 +1,23 @@
+{
+  "name": "resume-pdf-builder",
+  "version": "1.0.0",
+  "description": "Generate a polished, multi-page-safe resume PDF from a JSON file using HTML/CSS themes and headless Chromium.",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "build": "node build-pdf.js",
+    "build:example": "node build-pdf.js --config resume.example.json",
+    "test": "node --test test/*.test.js",
+    "test:unit": "node --test test/validate.test.js test/config.test.js test/render.test.js",
+    "previews": "node scripts/generate-previews.js"
+  },
+  "dependencies": {
+    "puppeteer": "^25.14.0"
+  },
+  "devDependencies": {
+    "pdfjs-dist": "^6.4.299"
+  }
+}

@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Build output (see --out-dir)
+/output/
+
+# Your own resume data and photos. Keep personal files here or in resume.json;
+# only the fictional resume.example.json is meant to be committed.
+/resume.json
+/private/
+
+# Legacy output locations from earlier versions of this project
+/resume.html
+/resume.pdf
+
+# Temporary files written during atomic saves
+*.tmp
+
+# Logs and caches
+npm-debug.log*
+.npm/
+.cache/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Machine-specific Claude Code settings
+.claude/settings.local.json

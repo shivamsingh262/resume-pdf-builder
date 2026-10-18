@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [22, 24]
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+      # Ubuntu 24.04 blocks the unprivileged user namespaces Chromium's sandbox
+      # needs; re-enable them instead of running Chromium with --no-sandbox.
+      - name: Allow Chromium sandbox
+        run: echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
+      - run: npm ci
+      - run: npm test
+      - name: Build the example
+        run: npm run build:example -- --out-dir output
+      - uses: actions/upload-artifact@v4
+        if: matrix.node == 22
+        with:
+          name: example-resume
+          path: output/
